@@ -23,8 +23,7 @@ class Swimmer(val swimming: () -> Unit) {
 }
 
 fun main() {
-    val weekendShaw = Swimmer(freestyle)
-    weekendShaw.swim()
-    val weekdaysShaw = Swimmer(breaststroke)
-    weekdaysShaw.swim()
+    //测试策略模式
+    Swimmer(freestyle).swim()
+    Swimmer(breaststroke).swim()
 }
